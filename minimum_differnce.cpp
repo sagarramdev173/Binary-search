@@ -22,6 +22,8 @@ int MinDiff(int a[],int start,int end,int item)
            start=mid+1;
         }        
     } 
+    // start and end will be poiniting to the nearest neighbour to the key
+    // i.e start will be poiniting to the 10 and  end =6
     int F1=abs(a[end]-item);
     int F2=abs(a[start]-item);
     return (F1>F2)? a[start]:a[end];
